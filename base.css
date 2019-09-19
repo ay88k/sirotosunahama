@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+*{
+  margin:0;
+  padding:0;
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+}
+	
+html,body{
+  height: 100%;
+}
+
+.global-nav__list{
+	display: none;
+}
+
+#wrap{
+  width: 1024px;
+  margin: 0 auto;
+}
+
+ul{
+  list-style: none;
+}
+
+/*-----------------------------------------------------header*/
+
+#page-top a{
+	background-image: url("../image/page-top.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 105px;
+	height: 100px;
+	position: fixed;
+	right: 20px;
+	bottom: 10px;
+	z-index: 50;
+}
+
+#page-top a:hover{
+	background-image: url("../image/page-top_hover.png");
+}
+
+
+h1 .logo1{
+	margin-left: 20px;
+	margin-top: 20px;
+	z-index: 2;
+    position: absolute;
+}
+
+.kado{
+	display: none;
+}
+
+.kumo{
+	display: none;
+}
+
+.nav ul{
+  margin:0 auto;
+  padding-left: 310px;
+  padding-top: 65px;
+  padding-bottom: 45px;
+  display: flex;
+  position: relative;
+}
+
+.btn{
+	margin-left: 40px;
+	margin-right: 30px;
+}
+
+/*-----------------------------------------------------content*/
+
+.fadein {
+  opacity: 0;
+  transform : translate(0, 30px);
+  transition : all 1.0s;
+}
+
+.fadein.scrollin{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#mainImg{
+  position: relative;
+  width: 1024px;
+  height: 600px;
+  display: flex;
+}
+
+#wagon{
+	top: -420px;
+	position: relative;
+	left: -400px;
+	z-index: 1;
+}
+
+#shiro{
+	top: -600px;
+	position: relative;
+	left: -480px;
+	z-index: 2;
+}
+
+#goza{
+	top: -1000px;
+	position: relative;
+	text-align: center;
+	left: 20%;
+	z-index: 3;
+}
+
+#shower{
+	top: -700px;
+	position: relative;
+	left: -27%;
+	z-index: 4;
+}
+
+#content{
+  	height: 100%;
+}
+
+main{
+  	width:100%;
+	text-align: center;
+}
+
+#res_bar{
+	visibility: hidden;
+}
+
+h2{
+  	color: #5c84c5;
+	text-align: center;
+}
+
+#aboutP h2{
+	padding-top: 100px;
+}
+
+p{
+	color: #5c84c5;
+}
+
+.p1{
+	font-size: 20px;
+	display: inline-flex;
+	padding-top: 20px;
+	margin: auto;
+}
+
+.moji{
+	margin-top: 2px;
+}
+
+.flex{
+	display: flex;
+	padding-top: 30px;
+}
+
+.blockAbout{
+	width: 45%;
+	margin-top: 50px;
+}
+
+.res_DogSea{
+	display: none;
+}
+
+.p2{
+	font-size: 20px;
+    text-align: right;
+}
+
+.p3{
+	font-size: 16px;
+	text-align: right;
+	margin-top: 30px;
+}
+
+.DogSea{
+	margin-left: 30px;
+}
+
+#serviceP{
+	padding-top: 140px;
+	width: 90%;
+	text-align: center;
+	display: inline-block;
+}
+
+.boxService{
+	display: flex;
+	justify-content: space-between;
+}
+
+.blockService{
+	width: 200px;
+	margin-top: 20px;
+}
+
+.blockService p{
+	text-align: right;
+	margin-top: 20px;
+}
+
+.blockService p a{
+    color: #c3d5f1;
+    text-decoration: none;
+	transition: color 0.2s;
+}
+
+.blockService a:hover{
+	color: #5c84c5;
+}
+
+#menuP{
+	padding-top: 50px;
+	width: 80%;
+	text-align: center;
+	display: inline-block;
+	margin:50px auto;
+}
+
+.menuImg{
+	vertical-align: bottom;
+	max-width:140px;
+	height:auto;
+	}
+
+.item {
+  position: relative;
+  font-size: 14px;
+}
+
+.item:hover .menuImg {
+  transition: 0.3s;
+  filter: grayscale(100%) brightness(70%);
+}
+
+.item:hover:after {
+  content: attr(alt);
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cate-goza{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0 20px 140px;
+}
+
+.cate-goza p:nth-child(2){
+	margin-left: 30px;
+}
+
+.menuUL{
+	display: flex;
+	justify-content: space-between;
+}
+
+.menuLI{
+	width: 140px;
+}
+
+.cate-wagon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 100px 0 20px 100px;
+}
+
+.cate-wagon p:nth-child(2){
+	margin-left: 50px;
+}
+
+#contactP{
+	padding-top: 50px;
+	margin-bottom: 200px;
+}
+
+.access{
+	width: 100%;
+	padding-top: 30px;
+	display: flex;
+	text-align: right;
+	font-size: 16px;
+	align-items: center;
+}
+
+.blockContact{
+	width: 50%;
+	margin-right: 80px;
+}
+
+.res_blockContact{
+	display: none;
+}
+
+.map{
+	z-index: 1;
+	width: 100%;
+}
+
+.gmap{
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.gmap iframe {
+	position: absolute;
+	left: 0px;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.mapBack{
+	background-color: #E7EEF9;
+	float: right;
+	width: 550px;
+	height: 270px;
+	margin-top: -220px;
+	margin-right: -28px;
+	z-index: 2;
+}
+
+/*-----------------------------------------------------footer*/
+footer{
+  background:#5c84c5;
+  color: #fff;
+  text-align:center;
+}
