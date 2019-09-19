@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+@media screen and (max-width:640px){
+	
+*{
+  margin:0;
+  padding:0;
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+}
+	
+html,body{
+  height: 100%;
+}
+	
+#wrap{
+  width: 640px;
+  margin: 0 auto;
+}
+	
+ul{
+  list-style: none;
+}
+	
+h1 .logo1{
+	width: 200px;
+	margin-left: 20px;
+	z-index: 2;
+}
+	
+	.kado{
+		display: block;
+		float: right;
+		margin: 0 auto;
+	}
+	
+.kumo{
+	display: block;
+	animation: fuwa 2s infinite alternate;
+  	transform-origin: 50% 50%;
+  	float: right;
+	margin: 200px -120px;
+}
+	
+.nav ul{
+  display: none;
+}
+
+.res_nav ,h3{
+	display: block;
+	text-align: right;
+}
+
+.res_content{
+	margin-top: -320px;
+	margin-right: 20px;
+	color: #fff;
+	font-size: 22px;
+}
+
+.res_content li ,.topnav{
+	padding-top: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+
+#mainImg{
+  position: absolute;
+  display: flex;
+  height: auto;
+  width: 640px;
+  top: 250px;
+}
+	
+#wagon{
+	top: -440px;
+	width: 184px;
+	height: 174px;
+	position: relative;
+	left: -530px;
+	z-index: 1;
+}
+	
+#shiro{
+	top: -700px;
+	width: 44px;
+	height: 50px;
+	position: relative;
+	left: -670px;
+	z-index: 2;
+}
+	
+#goza{
+	top: -1000px;
+	width: 580px;
+	height: 357px;
+	position: relative;
+	left: 2%;
+	z-index: 3;
+}
+	
+#shower{
+	top: -700px;
+	width: 311px;
+	height: 377px;
+	position: relative;
+	left: -62%;
+	z-index: 4;
+}
+
+#content{
+  	height: 100%;
+}
+
+main{
+	width:100%;
+	padding-top: 600px;
+	text-align: center;
+}
+
+#aboutP h2{
+	margin-top: 150px;
+	padding-top: 50px;
+}
+	
+.DogSea{
+	display: none;
+}
+	
+.res_DogSea{
+	display: block;
+	width: 100%;
+}
+	
+.p1{
+	font-size: 20px;
+	display: inline-flex;
+	padding-top: 20px;
+	margin: auto;
+	padding-bottom: 20px;
+}
+	
+.moji{
+	margin-top: 2px;
+}
+	
+.blockAbout{
+	display: inline-block;
+	width: 70%;
+	text-align: right;
+	position: absolute;
+	right: 20px;
+	margin-top: -100px;
+}
+	
+.p2{
+	font-size: 20px;
+	color: #fff;
+}
+	
+.p3{
+	font-size: 16px;
+	margin-top: 30px;
+}
+
+#serviceP{
+	margin-top: 150px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.boxService{
+	display: inline-block;
+	font-size: 18px;
+}
+	
+.blockService{
+	width: 480px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+	
+#menuP{
+	margin-top: 150px;
+	padding-top: 50px;
+	paddding-bottom: 50px;
+	width: 480px;
+	margin: auto;
+}
+
+.cate-goza{
+	display: block;
+	margin: 0;
+	positioin: absolute;
+	top: 0;
+	left: 0;
+	width: 140px;
+	padding-top: 50px;
+}
+
+.cate-goza p{
+	margin: 0!important;
+	text-align: center;
+}
+
+.cate-gozaImg{
+	margin-bottom: 10px;
+}
+
+.menuUL{
+	flex-wrap: wrap;
+	margin-top: -140px;
+}
+
+.menuLI{
+	margin-bottom: 30px;
+}
+
+.menuLI:first-child{
+	margin-left:170px;
+}
+
+.cate-wagon{
+	display: block;
+	margin: 0;
+	positioin: absolute;
+	top: 0;
+	left: 0;
+	width: 140px;
+	padding-top: 50px;
+}
+
+.cate-wagon p{
+	margin: 0!important;
+	text-align: center;
+}
+
+.cate-wagonImg{
+	margin-bottom: 10px;
+}
+	
+	#contactP{
+	margin-top: 0px;
+	padding-top: 50px;
+	margin-bottom: 100px;
+}
+	
+.access{
+	width: 100%;
+	padding-top: 30px;
+	display: block;
+	font-size: 16px;
+}
+
+.blockContact{
+	display: none;
+}
+
+.gmap{
+	height: 0;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.gmap iframe {
+	position: absolute;
+	left: 0px;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.res_blockContact{
+	margin-top: 20px;
+	display: block;
+	width: 100%;
+}
+
+.mapBack{
+	display: none;
+}
+	
+}
+
+@keyframes fuwa {
+  		0% {
+			transform: translateY(-15px)
+	}	
+  		100% {
+			transform: translateY(0)
+		}
+}
